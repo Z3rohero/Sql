@@ -1,0 +1,1 @@
+Es una basa de datos creada por la herramiente de https://dbdiagram.io/
