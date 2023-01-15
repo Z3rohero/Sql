@@ -1,9 +1,5 @@
-
-drop DATABASE coches;
-
-CREATE DATABASE coches;
 CREATE TABLE `coches` (
-  `id` int PRIMARY KEY,
+  `id` int PRIMARY KEY AUTO_INCREMENT,
   `modelo` varchar(255),
   `marca` varchar(255),
   `precio` int(20),
@@ -17,7 +13,7 @@ CREATE TABLE `grupos` (
 );
 
 CREATE TABLE `vendedores` (
-  `id` int PRIMARY KEY,
+  `id` int PRIMARY KEY AUTO_INCREMENT,
   `grupo_id` int,
   `nombre` varchar(255),
   `apellidos` varchar(255),
@@ -28,7 +24,7 @@ CREATE TABLE `vendedores` (
 );
 
 CREATE TABLE `clientes` (
-  `id` int PRIMARY KEY,
+  `id` int PRIMARY KEY AUTO_INCREMENT,
   `vendedor_id` int,
   `nombre` varchar(255),
   `ciudad` varchar(255),
@@ -36,7 +32,7 @@ CREATE TABLE `clientes` (
 );
 
 CREATE TABLE `encargos` (
-  `id` int PRIMARY KEY,
+  `id` int PRIMARY KEY AUTO_INCREMENT,
   `cliente_id` int,
   `coche_id` int,
   `cantidad` int,
